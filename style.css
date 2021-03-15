@@ -1,0 +1,162 @@
+html {
+  color: #ffb35a;
+  font-size: 24px;
+  cursor: none;
+  font-family: 'Messapia';
+  color: #ffb35a;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body a:hover {
+  cursor: none;
+}
+
+.website {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #074a0a;
+}
+
+section a {
+  font-family: 'MessapiaBold';
+  color: #F75F25;
+  text-decoration: none;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+}
+
+.introSection {
+  background-color: #074a0a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introSection #hey, .introSection #ciao, .introSection #salut {
+  -webkit-clip-path: inset(0px 0px 100% 1px);
+          clip-path: inset(0px 0px 100% 1px);
+}
+
+.introSection p {
+  font-size: 3rem;
+  font-family: 'MessapiaBold';
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.content section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  scroll-snap-align: start;
+}
+
+.content section p {
+  font-size: 2rem;
+  padding-left: 5vw;
+  padding-right: 10vw;
+}
+
+.content .bold {
+  font-family: 'MessapiaBold';
+}
+
+.aboutText {
+  opacity: 0;
+}
+
+.cursors {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  mix-blend-mode: difference;
+}
+
+.cursor {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  border: solid 0.1px white;
+}
+
+.cursorExtend {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  z-index: 900;
+}
+
+.projectImages img {
+  position: absolute;
+  z-index: 2000;
+  opacity: 0%;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.progresBar {
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  z-index: 2000;
+}
+
+.progresBar .circle {
+  border: solid 1px black;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */
