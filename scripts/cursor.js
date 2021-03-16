@@ -13,10 +13,11 @@ const onMouseMoveDelayed = (e) =>{
 document.addEventListener('mousemove', onMouseMove);
 document.addEventListener('mousemove', onMouseMoveDelayed);
 
+
 for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('mouseover', function(){
-        cursorExtend.style.transform = "scaleX(7)";
-    });
+    links[i].addEventListener('mouseover', setTimeOut(function(){
+        cursor.style.transform = "scaleX(7)";
+    }), 100);
 }
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('mouseleave', function(){
