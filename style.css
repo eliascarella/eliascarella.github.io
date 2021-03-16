@@ -1,10 +1,9 @@
-@use 'mobile';
 html {
-  color: #ffb35a;
+  color: #ffa400;
   font-size: 24px;
   cursor: none;
   font-family: 'Messapia';
-  color: #ffb35a;
+  color: #ffa400;
 }
 
 body {
@@ -27,12 +26,12 @@ section {
   width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: #074a0a;
+  background-color: #005900;
 }
 
 section a {
   font-family: 'MessapiaBold';
-  color: #F75F25;
+  color: #ff5100;
   text-decoration: none;
 }
 
@@ -50,7 +49,7 @@ h1, p {
 }
 
 .introSection {
-  background-color: #074a0a;
+  background-color: #005900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +165,7 @@ h1, p {
 }
 
 .progressBar .circle {
-  border: solid 1px #ffb35a;
+  border: solid 1px #ffa400;
   border-radius: 100%;
   height: 20px;
   width: 20px;
