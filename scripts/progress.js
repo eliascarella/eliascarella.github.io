@@ -46,5 +46,6 @@ var changeCircles = function() {
   }
 }
 
+changeCircles();
 document.querySelector('.content').addEventListener('scroll', changeCircles);
 

@@ -15,9 +15,9 @@ document.addEventListener('mousemove', onMouseMoveDelayed);
 
 
 for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('mouseover', setTimeOut(function(){
+    links[i].addEventListener('mouseover', function(){
         cursor.style.transform = "scaleX(7)";
-    }), 100);
+    });
 }
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('mouseleave', function(){
