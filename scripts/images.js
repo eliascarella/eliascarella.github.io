@@ -11,14 +11,14 @@ const CursorDelayed = document.querySelector('.cursorExtend');
 //Effect on linkTags
 for (let i = 0; i < linkTags.length; i++) {
     linkTags[i].addEventListener('mouseover', function(){
-        cursor.style.transform = "scaleX(7)";
+        cursor.style.transform = "scale(7)";
     });
 }
 
 
 for (let i = 0; i < linkTags.length; i++) {
     linkTags[i].addEventListener('mouseleave', function(){
-        cursor.style.transform = "scaleX(1)";
+        cursor.style.transform = "scale(1)";
     });
 }
 

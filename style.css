@@ -31,7 +31,7 @@ section {
 
 section a {
   font-family: 'MessapiaBold';
-  color: #ff3c00;
+  color: #ff7134;
   text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ h1, p {
   position: absolute;
   z-index: 1000;
   opacity: 0;
-  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
 }
 
 .cursor {
@@ -133,12 +133,14 @@ h1, p {
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
+  pointer-events: none;
 }
 
 .cursorExtend {
   -webkit-transition: 200ms;
   transition: 200ms;
   z-index: 900;
+  display: none;
 }
 
 .projectImages img {

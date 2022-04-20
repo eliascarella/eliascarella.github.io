@@ -1,6 +1,6 @@
 $background-color: rgb(0, 76, 2);
 $text-color: rgb(255, 176, 67);
-$secondary-color: rgb(255, 60, 0);
+$secondary-color: rgb(255, 113, 52);
 $cursor: none;
 html {
     //background-color: $background-color;
@@ -96,7 +96,7 @@ h1, p {
     position: absolute;
     z-index: 1000;
     opacity: 0;
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
 }
 
 .cursor {
@@ -109,11 +109,13 @@ h1, p {
     left: 0; 
     border: solid 0.1px white;
     transition: transform 300ms;
+    pointer-events: none;
 }
 
 .cursorExtend {
     transition: 200ms;
     z-index:900;
+    display:none;
 }
 
 .projectImages {
